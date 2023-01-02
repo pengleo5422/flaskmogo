@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js" xmlns:for="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename="img/fav.png") }}"/>
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Book</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/linearicons.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/linearicons.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/font-awesome.min.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/magnific-popup.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/nice-select.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/animate.min.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/owl.carousel.css") }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/main.css") }}"/>
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="index.html"><img src="{{ url_for('static',filename="img/logo.png") }}" alt="" title=""/></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#home">主頁</a></li>
+                    <li><a href="#about">關於</a></li>
+                    <li><a href="#fact">數據</a></li>
+                    <li><a href="#price">購買特殊版</a></li>
+                    <li><a href="#course">暢銷</a></li>
+                    <li class="menu-has-children"><a href="">頁面</a>
+                        <ul>
+                            <li><a href="generic.html">已購買</a></li>
+                            <li><a href="elements.html">Elements</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+
+
+<!-- start banner Area -->
+<form method="post">
+    <section class="banner-area" id="home">
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-start">
+                <div class="banner-content col-lg-7">
+                    <h5 class="text-white text-uppercase">作者:范中間</h5>
+                    <h1 class="text-uppercase">
+                        越南異使
+                    </h1>
+                    <input name="price" type="hidden" value="1088">
+                    <input name="name" type="hidden" value="越南異使">
+                    <input name="writer" type="hidden" value="范中間">
+                    <input name="press" type="hidden" value="億南">
+                    <input name="date" type="hidden" value="2022-12-29">
+                    <p class="text-white pt-20 pb-20">
+                        深刻真切的表達展露出含蓄卻不失時宜 <br> 難以忘懷的痛苦引領出一句句箴言
+                    </p>
+                    <button class="primary-btn text-uppercase" onclick="return confirm('確認購買?')">現在買只要1088元
+                    </button>
+                </div>
+                <div class="col-lg-5 banner-right">
+                    <img class="img-fluid" src="{{ url_for('static',filename="img/header-img.png" ) }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+<!-- End banner Area -->
+
+<!-- Start about Area -->
+<section class="section-gap info-area" id="about">
+    <div class="container">
+        <div class="single-info row mt-40 align-items-center">
+            <div class="col-lg-6 col-md-12 text-center no-padding info-left">
+                <div class="info-thumb">
+                    <img src="{{ url_for('static',filename="img/about-img.jpg") }}" class="img-fluid info-img" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                <div class="info-content">
+                    <h2 class="pb-30">關於這個網頁</h2>
+                    <p>
+                        故事起源於2022年，當我正在找尋真理之際，一道銀光閃過，迫切的自我眼前閃過，於是我便致力要販售優良書籍。
+                    </p>
+                    <br>
+                    <p>
+                        這裡僅有一片死寂，伴隨著冷冽冬風，一陣陣的朝著我們襲來，我們的意義在哪?
+                    </p>
+                    <br>
+                    <img src="{{ url_for('static',filename="img/signature.png" ) }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End about Area -->
+
+<!-- Start fact Area -->
+<section class="fact-area relative section-gap" id="fact">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-40 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">特色使我們茁壯</h1>
+                    <p>下面是一些數據</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End fact Area -->
+
+<!-- Start counter Area -->
+<section class="counter-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-counter">
+                    <h1 class="counter">-200</h1>
+                    <p>快樂的顧客</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-counter">
+                    <h1 class="counter">6784</h1>
+                    <p>預期總商品</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-counter">
+                    <h1 class="counter">1059</h1>
+                    <p>個夥伴</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-counter">
+                    <h1 class="counter">12239</h1>
+                    <p>總訂單</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end counter Area -->
+
+<!-- Start price Area -->
+<section class="price-area section-gap" id="price">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">購賣任何你要的</h1>
+                    <p>不管你要甚麼系統</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <form method="post">
+                    <div class="single-price no-padding">
+                        <div class="price-top">
+                            <h4>PDF權限大典</h4>
+                        </div>
+                        <p>
+                            超讚的<br>
+                            友善電子系統.
+                        </p>
+                        <input name="price" type="hidden" value="90">
+                        <input name="name" type="hidden" value="PDF權限大典">
+                        <input name="date" type="hidden" value="2022-12-29">
+                        <input name="writer" type="hidden" value="文合">
+                    <input name="press" type="hidden" value="無異">
+                        <div class="price-bottom">
+                            <h1><span>$</span> 90</h1>
+                            <button class="primary-btn header-btn" onclick="return confirm('確認購買?')">現在買</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-lg-4">
+                <form method="post">
+                    <div class="single-price no-padding">
+                        <div class="price-top">
+                            <h4>EEEE</h4>
+                        </div>
+                        <p>
+                            也是超讚的 <br>
+                            友善電子系統.
+                        </p>
+                        <input name="price" type="hidden" value="99">
+                        <input name="name" type="hidden" value="EEEE">
+                        <input name="date" type="hidden" value="2022-12-29"><input name="writer" type="hidden" value="意義無">
+                    <input name="press" type="hidden" value="億南">
+
+                        <div class="price-bottom">
+                            <h1><span>$</span> 99</h1>
+                            <button class="primary-btn header-btn" onclick="return confirm('確認購買?')">現在買</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-lg-4">
+                <form method="post">
+                    <div class="single-price no-padding">
+                        <div class="price-top">
+                            <h4>複製權限潮及</h4>
+                        </div>
+                        <p>
+                            超讚的 <br>
+                            複製能力
+                        </p>
+                        <input name="price" type="hidden" value="59">
+                        <input name="name" type="hidden" value="複製權限潮及">
+                        <input name="date" type="hidden" value="2022-12-29">
+                        <input name="writer" type="hidden" value="范中間">
+                    <input name="press" type="hidden" value="億南">
+                        <div class="price-bottom">
+                            <h1><span>$</span> 59</h1>
+                            <button class="primary-btn" onclick="return confirm('確認購買?')">現在買</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- End price Area -->
+
+<!-- Start course Area -->
+<section class="course-area section-gap" id="course">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-9">
+                <div class="title text-center">
+                    <h1 class="mb-10">前三暢銷書 </h1>
+                    <p>超多人喜歡</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="active-course-carusel">
+                <div class="single-course item">
+                    <img class="img-fluid" src="{{ url_for('static',filename="img/c1.jpg") }}" alt="">
+                    <p class="sale-btn">銷售中</p>
+                    <div class="details">
+                        <a href="#"><h4>思考評級<span class="price float-right">$25</span></h4></a>
+                        <p>
+                            便宜的價格，不廉價的收穫。
+                        </p>
+                    </div>
+                </div>
+                <div class="single-course item">
+                    <img class="img-fluid" src="{{ url_for('static',filename="img/c2.jpg" ) }}" alt="">
+                    <p class="sale-btn">銷售中</p>
+                    <div class="details">
+                        <a href="#"><h4>軌異<span class="price float-right">$25</span></h4></a>
+                        <p>
+                            2022必看，駭人悚事
+                        </p>
+                    </div>
+                </div>
+                <div class="single-course item">
+                    <img class="img-fluid" src="{{ url_for('static',filename="img/c3.jpg") }}" alt="">
+                    <p class="sale-btn">銷售中</p>
+                    <div class="details">
+                        <a href="#"><h4>異<span class="price float-right">$25</span></h4></a>
+                        <p>
+                            很便宜
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End course Area -->
+
+<!-- Start call-to-action Area -->
+<section class="call-to-action-area section-gap">
+    <div class="container">
+        <div class="row justify-content-center top">
+            <div class="col-lg-12">
+                <h1 class="text-white text-center">未來可能有的功能</h1>
+                <p class="text-white text-center mt-30">
+                    未來還未來
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center d-flex">
+            <div class="download-button d-flex flex-row justify-content-center mt-30">
+                <div class="buttons flex-row d-flex">
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <div class="desc">
+                        <a href="#">
+                            <p>
+                                <span>使用</span> <br>
+                                在 App Store
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="buttons flex-row d-flex">
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                    <div class="desc">
+                        <a href="#">
+                            <p>
+                                <span>使用</span> <br>
+                                在 Play Store
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End call-to-action Area -->
+
+<!-- Start testomial Area -->
+<section class="testomial-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">讀者評論</h1>
+                    <p>誰愛我們的系統</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="active-tstimonial-carusel">
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t1.png" ) }}" alt="">
+                    <p class="desc">
+                        麥當勞好吃
+                    </p>
+                    <h4>王柏豪</h4>
+                    <p>
+                        家家小吃的CEO
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t2.png") }}" alt="">
+                    <p class="desc">
+                        五星送免運卷
+                    </p>
+                    <h4>家家</h4>
+                    <p>
+                        家家小吃的CEO
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t3.png") }}" alt="">
+                    <p class="desc">
+                        浮屠一生不及水面浮葉，我思成墮因我意。
+                    </p>
+                    <h4>傌薩拉布斯</h4>
+                    <p>
+                        自由業
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t1.png") }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t2.png" ) }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t3.png" ) }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t1.png" ) }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t2.png") }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+                <div class="single-testimonial item">
+                    <img class="mx-auto" src="{{ url_for('static',filename="img/t3.png") }}" alt="">
+                    <p class="desc">
+                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+                        scanner, speaker, projector, hardware and more. laptop accessory
+                    </p>
+                    <h4>Mark Alviro Wiens</h4>
+                    <p>
+                        CEO at Google
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End testomial Area -->
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>About Us</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore dolore magna aliqua.
+                    </p>
+                    <p class="footer-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                            aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>Newsletter</h6>
+                    <p>Stay update with our latest</p>
+                    <div class="" id="mc_embed_signup">
+                        <form target="_blank" novalidate="true"
+                              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                              method="get" class="form-inline">
+                            <input class="form-control" name="EMAIL" placeholder="Enter Email"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                   required="" type="email">
+                            <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right"
+                                                                         aria-hidden="true"></i></button>
+                            <div style="position: absolute; left: -5000px;">
+                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                            </div>
+
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                <div class="single-footer-widget">
+                    <h6>Follow Us</h6>
+                    <p>Let us be social</p>
+                    <div class="footer-social d-flex align-items-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<script src="{{ url_for('static',filename="js/vendor/jquery-2.2.4.min.js") }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="{{ url_for('static',filename="js/vendor/bootstrap.min.js") }}"></script>
+<script type="text/javascript"
+        src=https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA></script>
+<script src="{{ url_for('static',filename="js/easing.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/hoverIntent.js") }}"></script>
+<script src="{{ url_for('static',filename="js/superfish.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/jquery.ajaxchimp.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/jquery.magnific-popup.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/owl.carousel.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/jquery.sticky.js") }}"></script>
+<script src="{{ url_for('static',filename="js/jquery.nice-select.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/parallax.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/waypoints.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/jquery.counterup.min.js") }}"></script>
+<script src="{{ url_for('static',filename="js/mail-script.js") }}"></script>
+<script src="{{ url_for('static',filename="js/main.js") }}"></script>
+</body>
+</html>
+
+
+
