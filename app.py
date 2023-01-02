@@ -56,10 +56,6 @@ def update(id):
     return redirect(url_for('generic'))
 
 
-@app.post('/<name>/<price>/add/')
-def add(name, price):
-    todos.insert_one({'商品名': name, '價格': price})
-    return redirect(url_for('index'))
 
 
 
