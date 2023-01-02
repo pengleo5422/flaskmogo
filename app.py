@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
 
-password = urllib.parse.quote_plus("7cR2@SVz@4N@Yi6")
+password = urllib.parse.quote_plus("你自己的")
 client = pymongo.MongoClient(
     "mongodb+srv://pen:%s@cluster0.2bvbuoj.mongodb.net/test?retryWrites=true&w=majority" % (password))
 db = client.test
